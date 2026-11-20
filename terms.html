@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClipPilot Terms of Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
+<style>
+  body { margin: 0; }
+  *, *::before, *::after { box-sizing: border-box; }
+  /* Layout: a single reading column (~68ch) with a sticky contents list beside it on wide screens. */
+  :root {
+    --bg: #fbfbfd; --surface: #f2f2f8; --fg: #16171d; --muted: #5d6170; --line: #e1e1ea;
+    --accent: #5546d6; --accent-soft: #ecebff; --warn-bg: #fff4d6; --warn-fg: #6b4e00;
+    --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+    --body: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0e1013; --surface: #161a20; --fg: #e8ecf1; --muted: #9aa3b0; --line: #2a313b;
+      --accent: #a79dff; --accent-soft: #221f3d; --warn-bg: #3a2f10; --warn-fg: #ffd978; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0e1013; --surface: #161a20; --fg: #e8ecf1; --muted: #9aa3b0; --line: #2a313b;
+    --accent: #a79dff; --accent-soft: #221f3d; --warn-bg: #3a2f10; --warn-fg: #ffd978; color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.65; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding-block: 40px 72px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .mark { width: 36px; height: 36px; border-radius: 9px; background: var(--accent); display: grid; place-items: center; flex: none; }
+  .mark svg { width: 18px; height: 18px; }
+  .brand { font-family: var(--display); font-weight: 700; font-size: 18px; }
+  .brand small { display: block; font-family: var(--body); font-weight: 500; font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .grid { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 56px; align-items: start; }
+  main { min-width: 0; max-width: 68ch; }
+  h1 { font-family: var(--display); font-size: clamp(30px, 5vw, 42px); line-height: 1.1; margin: 0 0 10px; text-wrap: balance; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+  .summary { background: var(--accent-soft); border-radius: 12px; padding: 18px 20px; margin: 0 0 36px; }
+  .summary h2 { margin: 0 0 8px; font-size: 15px; font-family: var(--body); font-weight: 600; letter-spacing: .02em; }
+  .summary ul { margin: 0; padding-left: 20px; }
+  h2 { font-family: var(--display); font-size: 22px; line-height: 1.25; margin: 40px 0 10px; scroll-margin-top: 24px; text-wrap: balance; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  .placeholder { background: var(--warn-bg); color: var(--warn-fg); border-radius: 4px; padding: 0 5px; font-weight: 600; }
+  nav { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 24px); font-size: 14px; }
+  nav p { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 8px; }
+  nav ol { list-style: none; padding: 0; margin: 0; border-left: 1px solid var(--line); }
+  nav a { display: block; padding: 4px 0 4px 14px; color: var(--muted); text-decoration: none; }
+  nav a:hover { color: var(--fg); }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  @media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr); gap: 0; } nav { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 400 400"><g fill="none" stroke="#fff" stroke-width="40" stroke-linecap="round"><path d="M30 130V60q0-30 30-30h70M270 30h70q30 0 30 30v70M370 270v70q0 30-30 30h-70M130 370H60q-30 0-30-30v-70"/></g><path d="M128 92 322 200 128 308 170 200Z" fill="#fff"/></svg>
+    </div>
+    <div class="brand">ClipPilot<small>Legal</small></div>
+  </header>
+
+  <div class="grid">
+    <main>
+      <h1>Terms of Service</h1>
+      <p class="meta">Effective November 21, 2026 · These terms apply to anyone who uses ClipPilot</p>
+
+      <section class="summary" aria-label="Summary">
+        <h2>In short</h2>
+        <ul>
+          <li>Only use videos you own or have permission to use.</li>
+          <li>You approve every clip before it is posted, and you are responsible for what you post.</li>
+          <li>Follow TikTok’s and YouTube’s own terms and community rules.</li>
+          <li>ClipPilot is provided as is, without guarantees.</li>
+        </ul>
+      </section>
+
+      <h2 id="about">1. About ClipPilot</h2>
+      <p>ClipPilot is a video-clipping and publishing tool operated by the owner of the Clip Pilot channel (“we”, “us”). It runs on the operator’s own computer and helps turn long videos into short clips, which can then be published to TikTok and YouTube accounts the user connects. It is used by its operator and a small number of invited collaborators. By using ClipPilot you agree to these terms.</p>
+
+      <h2 id="content">2. Your content and rights</h2>
+      <ul>
+        <li>Only add videos you created, have licensed, or have written permission from the owner to clip and publish. ClipPilot asks for this “rights basis” for every video and records it.</li>
+        <li>You keep ownership of your content. ClipPilot does not claim any rights to it.</li>
+        <li>Credit the original creators of the content you clip, as your permission or license requires.</li>
+        <li>You are responsible for the clips, titles, captions and hashtags you publish, including any copyright or other claims they lead to.</li>
+      </ul>
+
+      <h2 id="platforms">3. TikTok and YouTube</h2>
+      <p>When you connect an account and publish through ClipPilot, you also agree to that platform’s terms and policies, and they apply to everything you post:</p>
+      <ul>
+        <li>TikTok: <a href="https://www.tiktok.com/legal/page/global/terms-of-service/en" target="_blank" rel="noopener">Terms of Service</a>, <a href="https://www.tiktok.com/community-guidelines" target="_blank" rel="noopener">Community Guidelines</a>, <a href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en" target="_blank" rel="noopener">Music Usage Confirmation</a> and, for promotional posts, the <a href="https://www.tiktok.com/legal/page/global/bc-policy/en" target="_blank" rel="noopener">Branded Content Policy</a>.</li>
+        <li>YouTube: <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a> and <a href="https://www.youtube.com/howyoutubeworks/policies/community-guidelines/" target="_blank" rel="noopener">Community Guidelines</a>. ClipPilot uses YouTube API Services; Google’s data practices are described in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+      </ul>
+      <p>Platforms set their own limits, for example how many posts are allowed per day or which visibility options are available, and ClipPilot follows them.</p>
+
+      <h2 id="publishing">4. Publishing and approval</h2>
+      <ul>
+        <li>ClipPilot never posts automatically. Every clip waits for your approval, and you choose the account, visibility and settings for each post.</li>
+        <li>Posting can fail or be delayed because of the platform, your connection or your account settings. Check your account to confirm a post went up as intended.</li>
+        <li>You can disconnect an account at any time in ClipPilot or from the platform’s own settings.</li>
+      </ul>
+
+      <h2 id="ai">5. AI suggestions</h2>
+      <p>ClipPilot can suggest clips, titles, descriptions and captions using automatic transcription and AI models. These suggestions can be wrong, incomplete or inaccurate. Review them before publishing; you decide what is posted.</p>
+
+      <h2 id="acceptable">6. Acceptable use</h2>
+      <p>Do not use ClipPilot to:</p>
+      <ul>
+        <li>publish content you do not have the rights to, or that infringes anyone’s copyright, trademark, privacy or other rights;</li>
+        <li>post spam, mass-produced repetitive content, or anything misleading;</li>
+        <li>break the law or the rules of TikTok, YouTube or any other service ClipPilot connects to;</li>
+        <li>try to access accounts or data that are not yours.</li>
+      </ul>
+
+      <h2 id="privacy">7. Privacy</h2>
+      <p>How ClipPilot handles information is explained in the <a id="privacy-link" href="privacy.html">ClipPilot Privacy Policy</a>.</p>
+
+      <h2 id="warranty">8. No warranty</h2>
+      <p>ClipPilot is provided “as is” and “as available”, without warranties of any kind, including that it will be error-free, uninterrupted, or suitable for a particular purpose.</p>
+
+      <h2 id="liability">9. Limitation of liability</h2>
+      <p>To the extent the law allows, we are not liable for any indirect, incidental or consequential damages, or for lost content, lost revenue, account actions taken by a platform, or claims arising from content you publish through ClipPilot.</p>
+
+      <h2 id="ending">10. Ending use</h2>
+      <p>You can stop using ClipPilot at any time by disconnecting your accounts and deleting your data. We may stop providing ClipPilot or end a collaborator’s access at any time.</p>
+
+      <h2 id="changes">11. Changes to these terms</h2>
+      <p>If these terms change, the updated version will be posted on this page with a new effective date. Continuing to use ClipPilot after that means you accept the updated terms.</p>
+
+      <h2 id="law">12. Governing law</h2>
+      <p>These terms are governed by the laws of the Republic of the Philippines.</p>
+
+      <h2 id="contact">13. Contact</h2>
+      <p>Questions about these terms: <strong id="contact-email" style="user-select: all">brianllevado0714@gmail.com</strong></p>
+
+      <footer>ClipPilot · Terms of Service · Effective November 21, 2026</footer>
+    </main>
+
+    <nav aria-label="Contents">
+      <p>Contents</p>
+      <ol>
+        <li><a href="#about">About ClipPilot</a></li>
+        <li><a href="#content">Your content and rights</a></li>
+        <li><a href="#platforms">TikTok and YouTube</a></li>
+        <li><a href="#publishing">Publishing and approval</a></li>
+        <li><a href="#ai">AI suggestions</a></li>
+        <li><a href="#acceptable">Acceptable use</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#warranty">No warranty</a></li>
+        <li><a href="#liability">Limitation of liability</a></li>
+        <li><a href="#ending">Ending use</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#law">Governing law</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClipPilot Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
+<style>
+  body { margin: 0; }
+  *, *::before, *::after { box-sizing: border-box; }
+  /* Layout: a single reading column (~68ch) with a sticky contents list beside it on wide screens. */
+  :root {
+    --bg: #fbfbfd; --surface: #f2f2f8; --fg: #16171d; --muted: #5d6170; --line: #e1e1ea;
+    --accent: #5546d6; --accent-soft: #ecebff; --warn-bg: #fff4d6; --warn-fg: #6b4e00;
+    --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+    --body: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0e1013; --surface: #161a20; --fg: #e8ecf1; --muted: #9aa3b0; --line: #2a313b;
+      --accent: #a79dff; --accent-soft: #221f3d; --warn-bg: #3a2f10; --warn-fg: #ffd978; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0e1013; --surface: #161a20; --fg: #e8ecf1; --muted: #9aa3b0; --line: #2a313b;
+    --accent: #a79dff; --accent-soft: #221f3d; --warn-bg: #3a2f10; --warn-fg: #ffd978; color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.65; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding-block: 40px 72px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .mark { width: 36px; height: 36px; border-radius: 9px; background: var(--accent); display: grid; place-items: center; flex: none; }
+  .mark svg { width: 18px; height: 18px; }
+  .brand { font-family: var(--display); font-weight: 700; font-size: 18px; }
+  .brand small { display: block; font-family: var(--body); font-weight: 500; font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .grid { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 56px; align-items: start; }
+  main { min-width: 0; max-width: 68ch; }
+  h1 { font-family: var(--display); font-size: clamp(30px, 5vw, 42px); line-height: 1.1; margin: 0 0 10px; text-wrap: balance; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+  .summary { background: var(--accent-soft); border-radius: 12px; padding: 18px 20px; margin: 0 0 36px; }
+  .summary h2 { margin: 0 0 8px; font-size: 15px; font-family: var(--body); font-weight: 600; letter-spacing: .02em; }
+  .summary ul { margin: 0; padding-left: 20px; }
+  h2 { font-family: var(--display); font-size: 22px; line-height: 1.25; margin: 40px 0 10px; scroll-margin-top: 24px; text-wrap: balance; }
+  h3 { font-size: 16px; margin: 22px 0 6px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  code { font-size: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; }
+  .table-wrap { overflow-x: auto; margin: 12px 0 16px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; min-width: 520px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; color: var(--muted); font-size: 12.5px; text-transform: uppercase; letter-spacing: .05em; }
+  .placeholder { background: var(--warn-bg); color: var(--warn-fg); border-radius: 4px; padding: 0 5px; font-weight: 600; }
+  nav { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 24px); font-size: 14px; }
+  nav p { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 8px; }
+  nav ol { list-style: none; padding: 0; margin: 0; border-left: 1px solid var(--line); }
+  nav a { display: block; padding: 4px 0 4px 14px; color: var(--muted); text-decoration: none; }
+  nav a:hover { color: var(--fg); }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  @media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr); gap: 0; } nav { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 400 400"><g fill="none" stroke="#fff" stroke-width="40" stroke-linecap="round"><path d="M30 130V60q0-30 30-30h70M270 30h70q30 0 30 30v70M370 270v70q0 30-30 30h-70M130 370H60q-30 0-30-30v-70"/></g><path d="M128 92 322 200 128 308 170 200Z" fill="#fff"/></svg>
+    </div>
+    <div class="brand">ClipPilot<small>Legal</small></div>
+  </header>
+
+  <div class="grid">
+    <main>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective November 21, 2026 · Applies to the ClipPilot app and its connections to TikTok and YouTube</p>
+
+      <section class="summary" aria-label="Summary">
+        <h2>In short</h2>
+        <ul>
+          <li>ClipPilot runs on the operator’s own computer. There is no ClipPilot server, account system or database in the cloud.</li>
+          <li>Videos, clips, transcripts and login tokens stay on that computer.</li>
+          <li>Data leaves the computer only when you use a feature that needs another service: posting to TikTok or YouTube, or the optional AI features.</li>
+          <li>No advertising, no analytics, no tracking, and nothing is sold or shared for marketing.</li>
+        </ul>
+      </section>
+
+      <h2 id="who">1. Who we are</h2>
+      <p>ClipPilot is a video-clipping and publishing tool operated by the owner of the Clip Pilot channel (“we”, “us”). It turns long videos that the user owns or has permission to use into short clips, and publishes clips the user approves to the user’s own TikTok and YouTube accounts. It is used by its operator and a small number of invited collaborators; it is not offered to the general public.</p>
+
+      <h2 id="collect">2. Information ClipPilot uses</h2>
+      <h3>Content you add</h3>
+      <p>The video files you choose, the transcripts ClipPilot creates from them, and the clips, titles, descriptions, hashtags and caption edits you make. These are stored only on the computer running ClipPilot.</p>
+
+      <h3>Information from TikTok, when you connect a TikTok account</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Permission (scope)</th><th>What ClipPilot reads or does</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td><code>user.info.basic</code></td><td>Your TikTok open ID, display name, username and avatar</td><td>To show which account a clip will be posted to</td></tr>
+            <tr><td><code>video.publish</code></td><td>Posts a video you approve to your TikTok account, with the caption and settings you choose; reads which privacy options and interaction settings your account allows and the post’s processing status</td><td>To publish clips you approve and confirm they were published</td></tr>
+            <tr><td><code>video.upload</code></td><td>Uploads the video file for a post</td><td>To send the clip to TikTok</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Information from Google / YouTube, when you connect a YouTube channel</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Permission (scope)</th><th>What ClipPilot reads or does</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td><code>youtube.readonly</code></td><td>Your channel ID and name, and the titles of your most recent uploads</td><td>To show which channel you are posting to, and to check whether an interrupted upload already arrived so a video is never posted twice</td></tr>
+            <tr><td><code>youtube.upload</code></td><td>Uploads a video you approve, with its title, description, tags, visibility and optional publish time</td><td>To publish or schedule clips you approve</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Login tokens</h3>
+      <p>When you connect an account, TikTok or Google gives ClipPilot access and refresh tokens. They are saved in a file in ClipPilot’s local data folder, are used only to call the service that issued them, and are never shown again in the app.</p>
+
+      <h2 id="use">3. How information is used</h2>
+      <ul>
+        <li>To transcribe your videos, suggest clips, render them, and let you review and edit them.</li>
+        <li>To publish, schedule and track the clips you approve on the accounts you connected.</li>
+        <li>To show you your connected accounts and the results of your posts.</li>
+      </ul>
+      <p>Nothing is posted without your approval. ClipPilot does not use your information for advertising, profiling, analytics or any purpose other than the ones above.</p>
+
+      <h2 id="share">4. When information leaves your computer</h2>
+      <p>Only when you use a feature that requires it, and only to the service involved:</p>
+      <ul>
+        <li><strong>TikTok</strong>: the clip file, its caption and the post settings you choose, when you post to TikTok.</li>
+        <li><strong>YouTube (Google)</strong>: the clip file, title, description, tags and visibility, when you publish to YouTube.</li>
+        <li><strong>AI providers you turn on</strong> (Google Gemini, Groq or a local Ollama): when you use clip finding or title suggestions, the clip’s transcript text and the video title, and for Gemini up to four still frames from the clip. Speech-to-text runs on your own computer.</li>
+        <li><strong>Discord</strong>, only if you add a webhook: short messages such as a clip’s title when clips are ready or an upload fails.</li>
+      </ul>
+      <p>Each of these services handles the data under its own privacy policy. We do not sell, rent or trade your information.</p>
+
+      <h2 id="youtube">5. YouTube API Services</h2>
+      <p>ClipPilot uses YouTube API Services. By connecting a YouTube channel you agree to the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>, and Google’s handling of your data is described in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>. You can remove ClipPilot’s access to your Google account at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</p>
+
+      <h2 id="storage">6. Storage and security</h2>
+      <p>All data is stored on the computer running ClipPilot. The app only accepts connections from that same computer (it listens on <code>127.0.0.1</code>), so it is not reachable from other devices or the internet. Keys and tokens are kept out of source code and version control. As with any software on a personal computer, the security of that data also depends on the security of the computer itself.</p>
+
+      <h2 id="retention">7. Keeping and deleting data</h2>
+      <ul>
+        <li>Data is kept until you delete it. Deleting a video in ClipPilot removes its file, transcript and clips from ClipPilot’s data folder.</li>
+        <li>Disconnecting an account in ClipPilot deletes its saved tokens.</li>
+        <li>You can also revoke access from the platform: in TikTok, go to <em>Settings and privacy → Security → Manage app permissions</em>; for Google, use <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+        <li>Videos already published stay on TikTok or YouTube until you delete them there.</li>
+      </ul>
+
+      <h2 id="children">8. Children</h2>
+      <p>ClipPilot is not directed to children under 13 (or the minimum age in your country) and is not intended to be used by them.</p>
+
+      <h2 id="changes">9. Changes to this policy</h2>
+      <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
+
+      <h2 id="contact">10. Contact</h2>
+      <p>Questions or requests about this policy or your data: <strong id="contact-email" style="user-select: all">brianllevado0714@gmail.com</strong></p>
+      <p>See also the <a id="terms-link" href="terms.html">ClipPilot Terms of Service</a>.</p>
+
+      <footer>ClipPilot · Privacy Policy · Effective November 21, 2026</footer>
+    </main>
+
+    <nav aria-label="Contents">
+      <p>Contents</p>
+      <ol>
+        <li><a href="#who">Who we are</a></li>
+        <li><a href="#collect">Information used</a></li>
+        <li><a href="#use">How it’s used</a></li>
+        <li><a href="#share">When data leaves</a></li>
+        <li><a href="#youtube">YouTube API Services</a></li>
+        <li><a href="#storage">Storage and security</a></li>
+        <li><a href="#retention">Keeping and deleting</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+</body>
+</html>
